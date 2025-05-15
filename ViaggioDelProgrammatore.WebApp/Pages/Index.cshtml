@@ -1,0 +1,412 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<!DOCTYPE html>
+<html lang="it">
+    <body>
+    <!-- Include Header -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white text-center">
+        <div class="hero-overlay"></div>
+        <div class="hero-content-wrapper">
+            <h1>Il mio viaggio nella programmazione</h1>
+            <p class="hero-subtitle">Esperienze, mindset e strategie per crescere nel mondo dello sviluppo software e non solo.</p>
+            <a href="../blog.html" class="btn-hero">Scopri di più</a>
+        </div>
+    </section>
+
+    <!-- Main content -->
+    <main class="container mt-5">
+        <!-- About Me Section -->
+        <section id="about" class="mb-5">
+            <h2>Chi sono</h2>
+            <p>
+                Sono uno sviluppatore appassionato con una grande curiosità per la tecnologia e la programmazione.
+                Attraverso le sfide che ho affrontato e le lezioni che ho imparato lungo la strada,
+                ti condividerò il mio percorso. Ecco perchè "Il viaggio del programmatore".
+                Perchè proprio come in un viaggio, anche se cerchi di organizzare ogni aspetto,
+                si presenterà sempre l'imprevisto che proprio non avevi nemmeno considerato. Ed è proprio in
+                quei momenti che aggiungi un mattoncino alla tua crescita!
+                Questa è la filosofia di vita (non solo legato allo sviluppo software) che mi porto dietro da ormai
+                molto tempo.
+                Non "nasco" sviluppatore, ma col passare degli anni a tentare diverse strade, ho capito che la
+                programmazione
+                mi appassionava e quindi la sto facendo diventare qualcosa che, divertendomi, potrà darmi grandi
+                soddisfazioni!
+            </p>
+        </section>
+        <section class="container-fluid text-white text-center">
+            <button class="btn btn-hero mt-3" onclick="window.location.href='../chisono.html'">
+                Scopri chi sono e la mia mission
+            </button>
+        </section><br>
+
+
+        <!-- My Skills Section -->
+        <section id="skills" class="mb-5">
+            <h2>Le mie competenze</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100" data-bs-toggle="modal" data-bs-target="#skillsModal1">
+                        <div class="card-body">
+                            <h5 class="card-title">Sviluppo Software</h5>
+                            <p class="card-text">
+                                Esperto nello sviluppo di siti web moderni e performanti utilizzando le
+                                tecnologie più aggiornate.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100" data-bs-toggle="modal" data-bs-target="#skillsModal2">
+                        <div class="card-body">
+                            <h5 class="card-title">Problem Solving</h5>
+                            <p class="card-text">
+                                Mi piace risolvere problemi complessi e trovare soluzioni eleganti a
+                                sfide di programmazione.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100" data-bs-toggle="modal" data-bs-target="#skillsModal3">
+                        <div class="card-body">
+                            <h5 class="card-title">Crescita personale e mindset</h5>
+                            <p class="card-text">
+                                Sono costantemente impegnato nel miglioramento personale e
+                                nell'apprendimento continuo per crescere come sviluppatore e come individuo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bootstrap Modals -->
+        <div class="modal fade" id="skillsModal1" tabindex="-1" aria-labelledby="skillsModal1Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="skillsModal1Label">Sviluppo software</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Sto costruendo il mio know how nello sviluppo software utilizzando le migliori tecnologie dell'ecosistema Microsoft.
+                            Ogni giorno faccio esperienza nello sviluppo di applicazioni robuste, scalabili e performanti, sfruttando al
+                            massimo le potenzialità offerte da Microsoft.
+                        </p>
+                        <p>
+                            Utilizzo <strong>C# e .NET</strong> per sviluppare soluzioni software avanzate, ottimizzando
+                            le prestazioni e garantendo sicurezza e manutenibilità.
+                        </p>
+                        <p>
+                            Gestisco <strong>database relazionali come SQL Server e MySQL</strong>, utilizzando
+                            <strong>Entity Framework Core</strong> e <strong>ADO.NET</strong> per garantire efficienza
+                            nell'accesso ai dati.
+                        </p>
+                        <p>
+                            Creo e consumo <strong>REST API</strong> per connettere sistemi diversi in modo fluido ed
+                            efficiente, seguendo le best practice architetturali.
+                        </p>
+                        <p>
+                            Lavoro con <strong>Azure</strong> per il cloud computing, implementando soluzioni
+                            distribuite, microservizi e automazione con DevOps.
+                        </p>
+                        <p>
+                            Progetto software basato su <strong>pattern architetturali e di design</strong>, garantendo
+                            modularità, riusabilità e scalabilità perchè credo che un'ottima architettura
+                            sia il punto cruciale per creare un software a prova di bomba.
+                        </p>
+                        <p>
+                            Utilizzo <strong>Blazor</strong> per lo sviluppo di web app moderne con C#, eliminando la
+                            dipendenza da framework JavaScript complessi.
+                        </p>
+                        <p>
+                            Conosco le metodologie <strong>Agile</strong> per collaborare con altri sviluppatori e
+                            ottimizzare i processi di sviluppo e consegna del software.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="skillsModal2" tabindex="-1" aria-labelledby="skillsModal2Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="skillsModal2Label">Problem solving</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Affronto ogni problema con un approccio strategico, partendo da una visione d'insieme per
+                            individuare il cuore della questione.
+                        </p>
+                        <p>
+                            Grazie alla mia esperienza, so decostruire problemi complessi e ricostruire le soluzioni in
+                            modo efficace.
+                        </p>
+                        <p>
+                            Sfrutto il <strong>reverse engineering</strong> per capire il funzionamento interno di un
+                            sistema e individuare eventuali criticità o opportunità di miglioramento.
+                        </p>
+                        <p>
+                            Non mi fermo alla superficie: vado in profondità per trovare la soluzione più elegante e
+                            sostenibile nel lungo periodo.
+                        </p>
+                        <p>
+                            La mia mentalità orientata alla risoluzione dei problemi mi permette di prendere decisioni
+                            rapide e mirate, riducendo il rischio di errori.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="skillsModal3" tabindex="-1" aria-labelledby="skillsModal3Label" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="skillsModal3Label">Crescita personale e mindset</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Divoro libri e audiolibri su produttività, leadership e crescita personale.</p>
+                        <p>
+                            Mi affascina tutto ciò che riguarda il raggiungimento degli obiettivi e l'ottimizzazione
+                            delle performance.
+                        </p>
+                        <p>
+                            Credo che il successo inizi prima di tutto dallo <strong>stare bene con se stessi</strong>, per poi
+                            riflettersi in ogni area della vita.
+                        </p>
+                        <p>
+                            Ogni giorno cerco nuovi strumenti e strategie per migliorarmi, imparando dai migliori esperti
+                            del settore.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="mb-5">
+            <h2>I miei progetti</h2>
+            <p>Alcuni dei progetti su cui ho lavorato e di cui sono particolarmente orgoglioso:</p>
+            <ul style="list-style: none; padding: 0;">
+                <li style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-bottom: 30px;">
+                    <div style="flex: 1; min-width: 300px;">
+                        <strong style="font-size: 20px; color: #007bff; text-transform: uppercase;">Progetto 1:</strong>
+                        <p>
+                            Sito web moderno e responsive con un design pulito, intuitivo e altamente ottimizzato per
+                            l’esperienza utente.
+                        </p>
+                        <p>
+                            Questo sito è stato progettato per una <strong>travel designer</strong> specializzata in
+                            viaggi su misura, con un focus particolare su avventure in moto e trekking.
+                            L’obiettivo era creare una piattaforma che non fosse solo un semplice portfolio, ma un vero
+                            e proprio strumento di ispirazione per chi sogna di esplorare il mondo in modo autentico.
+                        </p>
+                        <p>
+                            Per garantire la massima <strong>visibilità online</strong>, ho ottimizzato codice e
+                            contenuti con strategie avanzate di SEO.
+                            Utilizzo costantemente i tool di Google e Microsoft per monitorare le performance del sito e
+                            migliorarne il posizionamento nei motori di ricerca.
+                        </p>
+                        <p>
+                            Il sito integra moduli di contatto smart, link ai social e una navigazione fluida,
+                            progettata per coinvolgere il visitatore e guidarlo nella scelta della sua prossima
+                            avventura.
+                        </p>
+                        <p>Clicca sull'immagine per curiosare sul sito!</p>
+                    </div>
+                    <a href="https://inviaggioconlacri.com/index.html" target="_blank"
+                       style="flex: 1; min-width: 300px;">
+                        <img src="../images/index/inviaggioconlacri.webp"
+                             alt="Home di Inviaggioconlacri" style="max-width: 100%; height: auto; border-radius: 10px;">
+                    </a>
+                </li>
+
+                <li style="margin-bottom: 30px;">
+                    <strong style="font-size: 20px; color: #007bff; text-transform: uppercase;">Progetto 2:</strong>
+                    <p>
+                        Questo sito, che ho costruito da zero, in <strong>HTML puro</strong>, per condividere il
+                        mio percorso nella programmazione.
+                        Ma questo è solo l'inizio: presto lo trasformerò in un'app <strong>C# avanzata</strong>,
+                        con <strong>database e API interamente costruite da me</strong>,
+                        per dimostrare concretamente le mie capacità e i miei progressi.
+                    </p>
+                    <p>
+                        Qui non troverai solo tutorial tecnici, ma un <strong>vero punto di riferimento</strong> per chi
+                        vuole imparare a programmare <strong>da zero</strong>,
+                        affrontando non solo le sfide del codice, ma anche quelle <strong>mentali</strong>.
+                        Perché imparare a sviluppare non è solo scrivere righe di codice, ma <strong>
+                            costruire il giusto
+                            mindset
+                        </strong>
+                        per ottenere risultati reali e non sentirsi mai bloccati o frustrati.
+                    </p>
+                    <p>
+                        Se sei un aspirante sviluppatore, qui troverai <strong>
+                            ispirazione, metodo e strategie
+                            pratiche
+                        </strong> per crescere.
+                        Se sei un'azienda, potrai scoprire il mio approccio <strong>concreto e strategico</strong> allo
+                        sviluppo software
+                        e valutare una collaborazione su progetti ambiziosi.
+                    </p>
+                </li>
+
+                <li style="margin-bottom: 30px;">
+                    <strong style="font-size: 20px; color: #007bff; text-transform: uppercase;">Progetto 3:</strong>
+                    <p>
+                        Sto sviluppando un'API RESTful con database <strong>MySQL</strong> per la gestione di un team di
+                        sviluppo.
+                        L'API consente di gestire <strong>ruoli, progetti, task, scadenze</strong> e altre funzionalità
+                        essenziali
+                        per ottimizzare il workflow di un team.
+                    </p>
+
+                    <p>
+                        Per la realizzazione, utilizzo <strong>ASP.NET Core</strong> con <strong>
+                            Entity Framework
+                            Core
+                        </strong> per
+                        l'accesso ai dati, adottando un'architettura ben strutturata basata sui <strong>
+                            principi
+                            SOLID
+                        </strong> e
+                        sulle <strong>best practice</strong> di sviluppo software.
+                    </p>
+
+                    <p>
+                        L'API include un'implementazione completa delle operazioni CRUD (<strong>
+                            Create, Read, Update,
+                            Delete
+                        </strong>),
+                        con un sistema di <strong>DTO (Data Transfer Objects)</strong> per separare i modelli di dominio
+                        dalle risposte REST,
+                        migliorando la sicurezza e la manutenibilità del codice.
+                    </p>
+
+                    <p>
+                        Per garantire una corretta separazione dei livelli e una gestione chiara delle dipendenze,
+                        sto applicando il <strong>Repository Pattern</strong> e l'<strong>Unit of Work</strong>.
+                        Inoltre, utilizzo <strong>AutoMapper</strong> per semplificare il mapping tra entità e DTO,
+                        riducendo il codice ripetitivo e migliorando la leggibilità.
+                    </p>
+
+                    <p>
+                        La gestione degli errori è strutturata tramite middleware personalizzati, garantendo risposte
+                        API standardizzate e leggibili. Sto implementando anche un sistema di autenticazione e
+                        autorizzazione
+                        basato su <strong>JWT (JSON Web Token)</strong> per proteggere le risorse e controllare gli
+                        accessi
+                        in base ai ruoli definiti.
+                    </p>
+
+                    <p>
+                        Il progetto includerà una pipeline di <strong>CI/CD (Continuous Integration / Continuous Deployment)</strong>
+                        configurata con <strong>GitHub Actions</strong> e <strong>Docker</strong>. Ogni push su GitHub attiva la pipeline,
+                        che esegue i test automatici, compila l’applicazione e crea un’immagine Docker pronta per il deployment
+                        su un ambiente cloud.
+                    </p>
+
+                    <!-- <p>Per il monitoraggio e il logging, utilizzo <strong>Serilog</strong> e <strong>Application Insights</strong>,
+                        garantendo un tracciamento chiaro degli errori e delle performance dell’API in produzione.</p> -->
+
+                    <p>
+                        Questo progetto non è solo un esercizio tecnico, ma una dimostrazione concreta della mia capacità
+                        di progettare
+                        e sviluppare <strong>API RESTful scalabili e robuste</strong>, applicando metodologie moderne
+                        per garantire <strong>modularità, manutenibilità e performance</strong>, oltre a un processo
+                        di sviluppo e rilascio completamente automatizzato.
+                    </p>
+                </li>
+            </ul>
+            <!-- GitHub section -->
+            <div class="text-center mt-4">
+                <p class="lead">
+                    <i class="fab fa-github fa-lg"></i>
+                    <strong class="ms-2">Scopri altri progetti, codice sorgente e contributi su GitHub:</strong><br>
+                    <a href="https://github.com/Mugen85" target="_blank">github.com/Mugen85</a>
+                </p>
+            </div>
+
+        </section>
+
+        <section class="missione-mini">
+            <h4 class="mb-2">🚀 La mia direzione</h4>
+            <p>
+                <strong>Cresco ogni giorno come sviluppatore e architetto software C#</strong>,
+                aiutando persone e realtà concrete a raccontarsi online con semplicità e valore. <b>Scopri la mia mission <a href="../chisono.html">qui</b></a>
+            </p>
+        </section>
+
+        <div class="col-12" style="height:20px;"></div>
+
+
+        <!-- Testimonials Section -->
+        <!-- <section id="testimonials" class="mb-5">
+            <h2>Cosa dicono di me</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-4">"Un professionista appassionato che mette il cuore in ogni progetto."</p>
+                            <footer class="blockquote-footer">Giovanni Verdi</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote text-center">
+                            <p class="mb-4">"Grazie ai suoi tutorial, ho imparato le basi della programmazione in modo semplice e chiaro."</p>
+                            <footer class="blockquote-footer">Anna Bianchi</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Precedente</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Successivo</span>
+                </button>
+            </div>
+        </section> -->
+        <!-- Call to Action Section -->
+        <section id="cta" class="text-center mb-5">
+            <h2>Contattami</h2>
+            <p>Se vuoi collaborare con me o semplicemente saperne di più, non esitare a contattarmi.</p>
+            <a href="mailto:doppiam1@gmail.com" class="btn btn-hero mt-3">Contattami</a>
+        </section>
+
+    </main>
+
+    <!-- Floating Action Button -->
+    <!-- <div class="fab-icon">
+        <span class="material-icons">chat</span>
+    </div> -->
+    <!-- Include Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery for loading external HTML -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $("#header-placeholder").load("header.html");
+            $("#footer-placeholder").load("footer.html");
+        });
+    </script>
+</body>
+
+</html>
