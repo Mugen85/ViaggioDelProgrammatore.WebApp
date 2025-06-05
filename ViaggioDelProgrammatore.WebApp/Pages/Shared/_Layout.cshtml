@@ -1,67 +1,66 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Il viaggio del programmatore</title>
+    @await RenderSectionAsync("HeadMeta", required: false) 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/css/base.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ViaggioDelProgrammatore.WebApp.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header class="bg-primary text-white">
+        @* O la classe che preferisci per lo stile *@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            @* Mantengo bg-dark come nel tuo _Layout.cshtml precedente *@
             <div class="container">
-                <a class="navbar-brand" href="/">Il viaggio del programmatore</a>
+                <a class="navbar-brand" asp-page="/Index">Il viaggio del programmatore</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto text-center">
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="/" onclick="document.querySelector('.navbar-toggler').click();">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="/chisono" onclick="document.querySelector('.navbar-toggler').click();">Chi sono</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="/blog" onclick="document.querySelector('.navbar-toggler').click();">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="/blog/mindset" onclick="document.querySelector('.navbar-toggler').click();">Mindset</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="/blog/development" onclick="document.querySelector('.navbar-toggler').click();">Development</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="/projects" onclick="document.querySelector('.navbar-toggler').click();">Progetti</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-3" href="/contact" onclick="document.querySelector('.navbar-toggler').click();">Contatti</a>
-                        </li>
-                    </ul>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto text-center">
+                            <li class="nav-item">
+                                <a class="nav-link px-3" asp-page="/Index" onclick="document.querySelector('.navbar-toggler').click();">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3" asp-page="/ChiSono" onclick="document.querySelector('.navbar-toggler').click();">Chi sono</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link px-3" asp-page="/Blog/Index" onclick="document.querySelector('.navbar-toggler').click();">Blog</a>
+                                @* Questo è l'unico link per il blog nella navbar principale *@
+                            </li>
+                            @* <li class="nav-item">
+                                <a class="nav-link px-3" asp-page="/Progetti" onclick="document.querySelector('.navbar-toggler').click();">Progetti</a>
+                            </li> *@
+                            <li class="nav-item">
+                                <a class="nav-link px-3" asp-page="/Contact" onclick="document.querySelector('.navbar-toggler').click();">Contatti</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
-
-
     </header>
+
     <div class="container-fluid" style="padding:0px !important">
+        @* Questo era nel tuo _Layout.cshtml, lo mantengo *@
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
     <footer class="bg-dark text-white text-center py-4 mt-5">
-        <p class="mb-1">&copy; 2025 Marco Morello</p>
+        @* Il tuo footer è già qui *@
+        <p class="mb-1">&copy; @DateTime.Now.Year Marco Morello</p> @* Aggiornato l'anno dinamicamente *@
         <p class="mb-2 fst-italic">Costruisco, cresco, condivido. Un progetto alla volta.</p>
         <p class="mb-1">Hai un'idea? Un progetto? Una sfida da affrontare insieme?</p>
         <p>Scrivimi: <a href="mailto:doppiam1@gmail.com" class="text-white text-decoration-underline">doppiam1@gmail.com</a></p>
     </footer>
-
-
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
